@@ -7,8 +7,10 @@ console.log(color1);
 console.log(color2);
 color1.addEventListener("input",function(){
 	body.style.background="linear-gradient(to right, "+color1.value+ ", "+color2.value+")";
+	css.textContent=body.style.background+" ;"
 
 })
 color2.addEventListener("input",function(){
 	body.style.background="linear-gradient(to right, "+color1.value+ ", "+color2.value+")";
+	css.textContent=body.style.background+" ;"
 })
